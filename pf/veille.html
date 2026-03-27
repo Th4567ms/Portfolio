@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Remplacer le titre par ton nom -->
+    <title>Veille Informationnelle - Thomas Coly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">&lt;TC/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bts.html" class="nav-link">Le BTS SIO</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="stages.html" class="nav-link">Stages</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="veille.html" class="nav-link active">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span>/</span>
+                <span>Veille Informationnelle</span>
+            </div>
+            <h1>Veille Informationnelle</h1>
+            <p>Ma veille technologique sur les tendances IT, la cybersécurité et les réseaux</p>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <section class="page-content">
+        <div class="container">
+
+            <!-- Introduction -->
+            <div class="veille-intro">
+                <h3>Qu'est-ce que la veille informationnelle ?</h3>
+                <p>
+                    La veille informationnelle (ou veille technologique) est un processus continu de surveillance
+                    et de collecte d'informations sur les évolutions technologiques, les nouvelles menaces de sécurité,
+                    et les tendances du secteur IT. Elle permet de rester à jour dans un domaine en constante évolution.
+                </p>
+                <p>
+                    Dans le cadre du BTS SIO, la veille est une compétence essentielle qui démontre notre capacité
+                    à nous tenir informés et à anticiper les changements technologiques.
+                </p>
+                <h4 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--text-primary);">Mes outils de veille :</h4>
+                <div class="veille-tools">
+                    <!-- TODO: Adapter selon tes vrais outils de veille -->
+                    <span class="veille-tool">Feedly</span>
+                    <span class="veille-tool">Google Alerts</span>
+                    <span class="veille-tool">Twitter/X</span>
+                    <span class="veille-tool">Reddit r/sysadmin</span>
+                    <span class="veille-tool">Le Monde Informatique</span>
+                    <span class="veille-tool">Bleeping Computer</span>
+                    <span class="veille-tool">The Hacker News</span>
+                    <span class="veille-tool">CERT-FR</span>
+                </div>
+            </div>
+
+            <!-- TODO: Remplacer le sujet de veille par ton vrai sujet -->
+            <h2 class="section-title">
+                <span class="title-decoration">//</span> Sujet de veille : La cybersécurité des infrastructures réseau
+            </h2>
+
+            <!-- Articles -->
+            <div class="articles-grid">
+                <!-- TODO: Remplacer par tes vrais articles de veille -->
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">15 Jan 2025</span>
+                        <span class="article-category category-cyber">Cybersécurité</span>
+                    </div>
+                    <h4>L'essor des attaques par ransomware ciblant les PME en 2025</h4>
+                    <p>
+                        Les ransomwares continuent d'évoluer et ciblent de plus en plus les petites et
+                        moyennes entreprises, souvent moins bien protégées. Les nouvelles tactiques incluent
+                        la double extorsion et le ciblage des sauvegardes.
+                    </p>
+                    <!-- TODO: Remplacer # par le vrai lien de l'article -->
+                    <a href="#" class="article-link">Lire l'article &rarr;</a>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">02 Fév 2025</span>
+                        <span class="article-category category-reseau">Réseaux</span>
+                    </div>
+                    <h4>SD-WAN : la révolution de la connectivité réseau d'entreprise</h4>
+                    <p>
+                        Le SD-WAN (Software-Defined Wide Area Network) transforme la manière dont les
+                        entreprises gèrent leurs réseaux étendus, offrant flexibilité, performance et
+                        réduction des coûts par rapport aux solutions MPLS traditionnelles.
+                    </p>
+                    <a href="#" class="article-link">Lire l'article &rarr;</a>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">18 Fév 2025</span>
+                        <span class="article-category category-cloud">Cloud</span>
+                    </div>
+                    <h4>L'infrastructure as Code avec Terraform : automatiser le cloud</h4>
+                    <p>
+                        L'Infrastructure as Code (IaC) avec des outils comme Terraform permet de
+                        provisionner et gérer des infrastructures cloud de manière automatisée,
+                        reproductible et versionnée. Un incontournable pour les admins modernes.
+                    </p>
+                    <a href="#" class="article-link">Lire l'article &rarr;</a>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">05 Mar 2025</span>
+                        <span class="article-category category-cyber">Cybersécurité</span>
+                    </div>
+                    <h4>Zero Trust : le nouveau paradigme de la sécurité réseau</h4>
+                    <p>
+                        Le modèle Zero Trust ("ne jamais faire confiance, toujours vérifier") redéfinit
+                        la sécurité réseau en éliminant la confiance implicite. Chaque accès est vérifié,
+                        peu importe la localisation de l'utilisateur.
+                    </p>
+                    <a href="#" class="article-link">Lire l'article &rarr;</a>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">12 Mar 2025</span>
+                        <span class="article-category category-ia">IA</span>
+                    </div>
+                    <h4>L'intelligence artificielle au service de la détection d'intrusions</h4>
+                    <p>
+                        L'IA et le machine learning révolutionnent les systèmes de détection d'intrusions (IDS)
+                        en permettant d'identifier des menaces inconnues grâce à l'analyse comportementale
+                        du trafic réseau en temps réel.
+                    </p>
+                    <a href="#" class="article-link">Lire l'article &rarr;</a>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">20 Mar 2025</span>
+                        <span class="article-category category-reseau">Réseaux</span>
+                    </div>
+                    <h4>WiFi 7 : ce que les administrateurs réseau doivent savoir</h4>
+                    <p>
+                        Le WiFi 7 (802.11be) promet des débits théoriques de 46 Gbps et une latence
+                        ultra-faible. Quels sont les impacts sur les infrastructures existantes et
+                        comment préparer la migration ?
+                    </p>
+                    <a href="#" class="article-link">Lire l'article &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Synthèse de la veille -->
+            <h2 class="section-title" style="margin-top: 4rem;">
+                <span class="title-decoration">//</span> Synthèse
+            </h2>
+            <div class="veille-intro">
+                <!-- TODO: Remplacer par ta propre synthèse de veille -->
+                <h3>Ce que j'ai appris de ma veille</h3>
+                <p>
+                    Ma veille technologique m'a permis de constater plusieurs tendances majeures dans le domaine
+                    des infrastructures réseau et de la cybersécurité :
+                </p>
+                <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-top: 1rem;">
+                    <li style="list-style: disc; margin-bottom: 0.75rem;">
+                        <strong>La sécurité est devenue la priorité n°1</strong> — Les cyberattaques se multiplient
+                        et deviennent plus sophistiquées, rendant la cybersécurité indispensable dans toute infrastructure.
+                    </li>
+                    <li style="list-style: disc; margin-bottom: 0.75rem;">
+                        <strong>Le cloud et l'hybride sont incontournables</strong> — Les entreprises adoptent massivement
+                        des architectures cloud et hybrides, nécessitant de nouvelles compétences.
+                    </li>
+                    <li style="list-style: disc; margin-bottom: 0.75rem;">
+                        <strong>L'automatisation change le métier</strong> — L'Infrastructure as Code et les outils
+                        d'automatisation transforment le rôle de l'administrateur réseau.
+                    </li>
+                    <li style="list-style: disc; margin-bottom: 0.75rem;">
+                        <strong>L'IA s'intègre dans la sécurité</strong> — Les solutions basées sur l'intelligence
+                        artificielle complètent les approches traditionnelles de sécurité.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">&lt;TC/&gt;</span>
+                    <p>Portfolio BTS SIO SISR</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="bts.html">BTS SIO</a>
+                    <a href="cv.html">CV</a>
+                    <a href="stages.html">Stages</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="veille.html">Veille</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thomas Coly. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

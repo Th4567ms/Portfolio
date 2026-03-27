@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Remplacer le titre par ton nom -->
+    <title>Compétences & Projets - Thomas Coly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">&lt;TC/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bts.html" class="nav-link">Le BTS SIO</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="stages.html" class="nav-link">Stages</a></li>
+                <li><a href="competences.html" class="nav-link active">Compétences</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span>/</span>
+                <span>Compétences & Projets</span>
+            </div>
+            <h1>Compétences & Projets</h1>
+            <p>Mes compétences techniques acquises en BTS SIO SISR et les projets réalisés</p>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <section class="page-content">
+        <div class="container">
+
+            <!-- Compétences Réseau -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                    Réseaux & Infrastructure
+                </h3>
+                <div class="skills-grid">
+                    <!-- TODO: Ajuster les niveaux (data-width) selon tes vraies compétences -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Cisco (Routage & Switching)</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                        <p class="skill-description">VLAN, trunking, routage inter-VLAN, ACL, STP, OSPF</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">TCP/IP & Protocoles</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <p class="skill-description">Modèle OSI, DHCP, DNS, HTTP, FTP, SSH, SNMP</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Pare-feu & VPN</span>
+                            <span class="skill-level">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">pfSense, IPsec, OpenVPN, NAT, règles de filtrage</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Wi-Fi & Téléphonie IP</span>
+                            <span class="skill-level">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                        <p class="skill-description">Bornes Wi-Fi, SSID, WPA2/3, VOIP, SIP, Asterisk</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Systèmes -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Systèmes & Serveurs
+                </h3>
+                <div class="skills-grid">
+                    <!-- TODO: Ajuster les niveaux selon tes vraies compétences -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Windows Server</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <p class="skill-description">TC, GPO, DNS, DHCP, WDS, WSUS, Hyper-V</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Linux (Debian/Ubuntu)</span>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <p class="skill-description">Administration, Apache/Nginx, iptables, cron, services</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Virtualisation</span>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <p class="skill-description">VMware ESXi, Proxmox, Hyper-V, VirtualBox</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Docker & Conteneurisation</span>
+                            <span class="skill-level">55%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="55"></div>
+                        </div>
+                        <p class="skill-description">Docker, Docker Compose, Portainer, images, volumes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Sécurité -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Cybersécurité
+                </h3>
+                <div class="skills-grid">
+                    <!-- TODO: Ajuster les niveaux selon tes vraies compétences -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Sécurité réseau</span>
+                            <span class="skill-level">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Pare-feu, IDS/IPS, segmentation, DMZ</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Supervision & Monitoring</span>
+                            <span class="skill-level">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                        <p class="skill-description">Zabbix, Nagios, PRTG, Grafana, alerting</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Scripting</span>
+                            <span class="skill-level">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                        <p class="skill-description">PowerShell, Bash, automatisation de tâches</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projets -->
+            <h2 class="section-title" style="margin-top: 4rem;">
+                <span class="title-decoration">//</span> Projets réalisés
+            </h2>
+
+            <div class="projects-grid">
+                <!-- TODO: Remplacer par tes vrais projets -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-image-placeholder">&#128274;</span>
+                    </div>
+                    <div class="project-body">
+                        <h4>Infrastructure réseau sécurisée</h4>
+                        <p>
+                            Conception et mise en place d'une infrastructure réseau complète avec segmentation VLAN,
+                            pare-feu pfSense, VPN site-to-site et DMZ pour héberger un serveur web.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">pfSense</span>
+                            <span class="tag">Cisco</span>
+                            <span class="tag">VLAN</span>
+                            <span class="tag">VPN</span>
+                            <span class="tag">DMZ</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- TODO: Ajouter le lien vers la documentation du projet -->
+                            <a href="#">Documentation &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-image-placeholder">&#128421;</span>
+                    </div>
+                    <div class="project-body">
+                        <h4>Déploiement Active Directory</h4>
+                        <p>
+                            Mise en place d'un environnement Active Directory complet avec GPO,
+                            serveur de fichiers, profils itinérants et scripts de connexion automatisés.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">TC DS</span>
+                            <span class="tag">GPO</span>
+                            <span class="tag">PowerShell</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- TODO: Ajouter le lien vers la documentation du projet -->
+                            <a href="#">Documentation &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-image-placeholder">&#128200;</span>
+                    </div>
+                    <div class="project-body">
+                        <h4>Plateforme de supervision Zabbix</h4>
+                        <p>
+                            Installation et configuration d'une plateforme Zabbix pour superviser
+                            un parc de 50 machines. Création de templates personnalisés et alertes automatiques.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Zabbix</span>
+                            <span class="tag">SNMP</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Grafana</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- TODO: Ajouter le lien vers la documentation du projet -->
+                            <a href="#">Documentation &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-image-placeholder">&#128230;</span>
+                    </div>
+                    <div class="project-body">
+                        <h4>Environnement Docker multi-services</h4>
+                        <p>
+                            Création d'un environnement Docker Compose avec Nextcloud, Portainer,
+                            reverse proxy Nginx et certificats SSL Let's Encrypt pour un auto-hébergement complet.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Nginx</span>
+                            <span class="tag">Nextcloud</span>
+                            <span class="tag">SSL</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- TODO: Ajouter le lien vers le repo GitHub -->
+                            <a href="#">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-image-placeholder">&#127760;</span>
+                    </div>
+                    <div class="project-body">
+                        <h4>Serveur Web LAMP sécurisé</h4>
+                        <p>
+                            Déploiement d'un serveur LAMP (Linux, Apache, MySQL, PHP) avec hardening,
+                            certificat SSL, fail2ban et sauvegarde automatisée.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Linux</span>
+                            <span class="tag">Apache</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Bash</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- TODO: Ajouter le lien vers la documentation du projet -->
+                            <a href="#">Documentation &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">&lt;TC/&gt;</span>
+                    <p>Portfolio BTS SIO SISR</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="bts.html">BTS SIO</a>
+                    <a href="cv.html">CV</a>
+                    <a href="stages.html">Stages</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="veille.html">Veille</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thomas Coly. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

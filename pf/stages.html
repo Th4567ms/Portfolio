@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Remplacer le titre par ton nom -->
+    <title>Stages - Thomas Coly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">&lt;TC/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bts.html" class="nav-link">Le BTS SIO</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="stages.html" class="nav-link active">Stages</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span>/</span>
+                <span>Stages</span>
+            </div>
+            <h1>Expériences en Stage</h1>
+            <p>Mes expériences professionnelles en entreprise durant ma formation BTS SIO SISR</p>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <section class="page-content">
+        <div class="container">
+            <div class="timeline">
+                <!-- TODO: Remplacer par ton vrai stage de 2ème année -->
+                <div class="timeline-item">
+                    <span class="timeline-date">Janvier 2025 — Février 2025</span>
+                    <h3>Technicien Systèmes et Réseaux — Stage 2ème année</h3>
+                    <div class="timeline-company">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <!-- TODO: Remplacer par le nom et la ville de l'entreprise -->
+                        TechSecure Solutions — Paris
+                    </div>
+                    <!-- TODO: Remplacer par la description de tes missions -->
+                    <p>
+                        Stage de 6 semaines au sein du service infrastructure. Participation à la mise en place
+                        d'une solution de supervision réseau avec Zabbix, configuration de pare-feu pfSense,
+                        et déploiement de postes clients via WDS/MDT.
+                    </p>
+                    <h4 style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem; margin-top: 0.5rem;">Missions réalisées :</h4>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <!-- TODO: Remplacer par tes vraies missions -->
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Installation et configuration de Zabbix pour la supervision du parc informatique (50+ machines)</li>
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Configuration de règles de pare-feu pfSense (NAT, VPN site-to-site)</li>
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Déploiement d'images Windows 11 via WDS/MDT sur 20 postes</li>
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Rédaction de procédures techniques et documentation réseau</li>
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Support technique de niveau 1 et 2 auprès des utilisateurs</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="tag">Zabbix</span>
+                        <span class="tag">pfSense</span>
+                        <span class="tag">WDS/MDT</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">VLAN</span>
+                    </div>
+                </div>
+
+                <!-- TODO: Remplacer par ton vrai stage de 1ère année -->
+                <div class="timeline-item">
+                    <span class="timeline-date">Mai 2024 — Juin 2024</span>
+                    <h3>Technicien Informatique — Stage 1ère année</h3>
+                    <div class="timeline-company">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <!-- TODO: Remplacer par le nom et la ville de l'entreprise -->
+                        NetGo Services — Lyon
+                    </div>
+                    <!-- TODO: Remplacer par la description de tes missions -->
+                    <p>
+                        Stage de 5 semaines dans une ESN (Entreprise de Services Numériques). Découverte de
+                        l'environnement professionnel IT et participation aux opérations de maintenance
+                        du parc informatique de plusieurs clients.
+                    </p>
+                    <h4 style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem; margin-top: 0.5rem;">Missions réalisées :</h4>
+                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <!-- TODO: Remplacer par tes vraies missions -->
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Gestion du parc informatique (inventaire, maintenance préventive)</li>
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Configuration de switchs Cisco Catalyst (VLAN, trunking)</li>
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Mise en place d'un serveur DHCP et DNS sous Windows Server 2019</li>
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Câblage réseau et brassage baie de brassage</li>
+                        <li style="list-style: disc; margin-bottom: 0.4rem;">Assistance utilisateurs et résolution d'incidents</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="tag">Cisco</span>
+                        <span class="tag">VLAN</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">DHCP</span>
+                        <span class="tag">DNS</span>
+                        <span class="tag">Support N1/N2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences développées en stage -->
+            <h2 class="section-title" style="margin-top: 4rem;">
+                <span class="title-decoration">//</span> Compétences développées
+            </h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Compétences techniques</h3>
+                    <ul>
+                        <!-- TODO: Adapter selon tes vrais acquis en stage -->
+                        <li>Administration Windows Server et Linux</li>
+                        <li>Configuration réseau (switchs, routeurs, pare-feu)</li>
+                        <li>Virtualisation et déploiement</li>
+                        <li>Supervision et monitoring réseau</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Compétences transversales</h3>
+                    <ul>
+                        <!-- TODO: Adapter selon tes vrais acquis en stage -->
+                        <li>Travail en équipe et communication</li>
+                        <li>Rédaction de documentation technique</li>
+                        <li>Gestion de projet et organisation</li>
+                        <li>Relation client et support utilisateur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">&lt;TC/&gt;</span>
+                    <p>Portfolio BTS SIO SISR</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="bts.html">BTS SIO</a>
+                    <a href="cv.html">CV</a>
+                    <a href="stages.html">Stages</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="veille.html">Veille</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thomas Coly. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
