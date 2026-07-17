@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initStatCounters();
     initTerminalTyping();
+    initSkillBars();
 });
 
 /* ===================================
@@ -360,3 +361,34 @@ document.addEventListener('DOMContentLoaded', initSkillBars);
 if (document.readyState !== 'loading') {
     initSkillBars();
 }
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async function(event) {
+  event.preventDefault(); // Bloque le rechargement de la page
+  
+  const data = new FormData(event.target);
+  status.innerHTML = "Envoi en cours...";
+  status.style.color = "#3498db"; // Couleur bleue pendant le chargement
+
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      status.innerHTML = "Votre message a bien été envoyé !";
+      status.style.color = "#2ecc71"; // Vert pour la réussite
+      form.reset(); // Vide les champs du formulaire
+    } else {
+      status.innerHTML = "Oups ! Un problème est survenu lors de l'envoi.";
+      status.style.color = "#e74c3c"; // Rouge pour l'erreur
+    }
+  }).catch(error => {
+    status.innerHTML = "Oups ! Impossible de contacter le serveur d'envoi.";
+    status.style.color = "#e74c3c";
+  });
+});

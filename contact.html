@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TODO: Remplacer le titre par ton nom -->
-    <title>Contact - Coly Thomas </title>
+    <title>Contact - Thomas Coly</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,7 +60,8 @@
                         <div>
                             <h4>Email</h4>
                             <!-- TODO: Remplacer par ton vrai email -->
-                            <p>alexandre.dupont@email.com</p>
+                            <p>coly.thomas.sio@gmail.com</p>
+                                
                         </div>
                     </div>
 
@@ -73,7 +74,7 @@
                         <div>
                             <h4>Téléphone</h4>
                             <!-- TODO: Remplacer par ton vrai numéro -->
-                            <p>06 12 34 56 78</p>
+                            <p>07 80 57 56 95</p>
                         </div>
                     </div>
 
@@ -100,7 +101,7 @@
                         <div>
                             <h4>LinkedIn</h4>
                             <!-- TODO: Remplacer par ton vrai profil LinkedIn -->
-                            <p><a href="#" style="color: var(--accent-secondary);" target="_blank">linkedin.com/in/alexandre-dupont</a></p>
+                            <p><a href="https://www.linkedin.com/in/thomas-coly-888a932b2" style="color: var(--accent-secondary);" target="_blank">linkedin.com/in/thomas-coly-888a932b2</a></p>
                         </div>
                     </div>
 
@@ -113,7 +114,7 @@
                         <div>
                             <h4>GitHub</h4>
                             <!-- TODO: Remplacer par ton vrai profil GitHub -->
-                            <p><a href="#" style="color: var(--accent-secondary);" target="_blank">github.com/alexandre-dupont</a></p>
+                            <p><a href="https://github.com/Th4567ms" style="color: var(--accent-secondary);" target="_blank">github.com/Th4567ms</a></p>
                         </div>
                     </div>
                 </div>
@@ -122,26 +123,28 @@
                 <div class="contact-form">
                     <h3>Envoyez-moi un message</h3>
                     <!-- TODO: Connecter le formulaire à un backend (Formspree, EmailJS, Netlify Forms, etc.) -->
-                    <form id="contact-form" action="#" method="POST">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Nom complet</label>
-                                <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="jean@email.com" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Sujet</label>
-                            <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
-                        </div>
-                        <button type="submit" class="form-submit">Envoyer le message</button>
+                   <form id="contact-form" action="https://formspree.io/f/mvzekrez" method="POST">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="NOM Prénom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre mail" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="subject">Sujet</label>
+        <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+    </div>
+    <button type="submit" class="form-submit">Envoyer le message</button>
+<p id="form-status" style="margin-top: 15px; font-weight: bold; font-family: inherit;"></p></form>
+                       
                     </form>
                 </div>
             </div>
